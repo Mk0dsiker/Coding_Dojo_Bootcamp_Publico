@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de registro</title>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <form action="" method="post">
+        <div>
+            <label for="id_fname">First Name: *</label>
+            <input type="text" name="firstName" id="id_fname" required>
+        </div>
+        <div>
+            <label for="id_lname">Last Name: *</label>
+            <input type="text" name="lastName" id="id_lname" required>
+        </div>
+        <div>
+            <label for="id_email">Email Address: *</label>
+            <input type="email" name="emailAddress" id="id_email" required>
+        </div>
+        <div>
+            <label for="id_passw">Password: *</label>
+            <input type="password" name="password" id="id_passw" required>
+        </div>
+        <div>
+            <label for="id_passwCon">Confirm Password: *</label>
+            <input type="password" name="passwordConfirmation" id="id_passwCon" required>
+        </div>
+        <div>
+            <label for="id_birth">Birthdate: </label>
+            <input type="date" name="birthdate" id="id_birth">
+        </div>
+        <div>
+            <label>Genre Identify:</label><br>
+            <input type="radio" name="genre" id="id_male">
+            <label for="id_male">Male</label>
+            <input type="radio" name="genre" id="id_female">
+            <label for="id_female">Female</label>
+            <input type="radio" name="genre" id="id_nonbin">
+            <label for="id_nonbin">Non-binary</label>
+            <input type="radio" name="genre" id="id_nonanswer">
+            <label for="id_nonanswer">I prefer not to answer</label>
+        </div>
+        <div>
+            <label for="id_descrip">A short description about myself:</label><br>
+            <textarea name="description" id="id_descrip" cols="30" rows="10"></textarea>            
+        </div>
+        <div>
+            <label for="id_langList">Favorite Language:</label>
+            <select name="language" id="id_langList">
+                <option value="javascript">JavaScript</option>
+                <option value="csharp">C#</option>
+                <option value="pyton">Pyton</option>
+            </select>
+        </div>
+        <div>
+            <input type="checkbox" name="emailUpdateAgree" id="id_emUpAgree">
+            <label for="id_emUpAgree">Yes, i would like to receive periodic email updates</label>
+        </div>
+        <div>
+            <input type="submit" value="Create Account">
+        </div>
+        <div>
+            <label>* Indicates a required field </label>
+        </div>
+    </form>
+</body>
+</html>

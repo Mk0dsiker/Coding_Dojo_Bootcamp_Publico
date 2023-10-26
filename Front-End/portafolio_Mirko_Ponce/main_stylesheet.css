@@ -1,0 +1,69 @@
+
+
+header {
+    border: 2px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    padding: 50px;
+}
+
+/* Contenedor de links */
+.div_mylinks{
+    /* border: 1px solid black; */
+    text-align: center;
+    padding-bottom: 32px;
+}
+
+.div_mylinks img {
+    
+    width: 65px;
+    height: 65px;
+}
+
+
+main {
+    border: 2px solid black;
+}
+
+/* Tabla tecnologías */
+.div_tableTec {
+    background-color: #ffe4c4;
+    text-align: center;
+    display: block;
+}
+
+.div_tableTec table {
+    border-collapse: collapse;
+    margin-left: 40%;
+}
+.div_tableTec th {
+    border: 1px solid black;
+    background-color: rgb(251, 185, 134);
+}
+.div_tableTec tr, td {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+}
+
+/* Social Snakes */
+.div_snakes  {
+    background-color: rgb(243, 229, 174);
+    text-align: center;
+}
+.div_snakes img {
+    width: 100px;
+    height: 100px;
+}
+
+/* Formulario */
+.div_form {
+    background-color: aquamarine;
+    text-align: center;
+    display: block;
+    /* padding: 0% 40%; */
+}
+
+.div_form div {
+    margin: 1%;
+}
+
