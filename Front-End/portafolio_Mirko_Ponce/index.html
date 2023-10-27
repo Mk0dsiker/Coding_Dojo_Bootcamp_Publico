@@ -3,19 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="/Front-End/portafolio_Mirko_Ponce/style.css"> -->
+    <link rel="stylesheet" href="/Coding_Dojo_Bootcamp_Publico/Front-End/portafolio_Mirko_Ponce/style.css">
     <title>Portafolio Mirko Ponce</title>
 </head>
 <body>
     <header>
         <h1>Mirko Ponce</h1>
-        <img src="/Front-End/portafolio_Mirko_Ponce/img/face.jpg" alt="face icon.jpg" width="200" height="200">
+        <img src="/Coding_Dojo_Bootcamp_Publico/Front-End/portafolio_Mirko_Ponce/img/face.jpg" alt="face icon.jpg" width="200" height="200">
         <div class="div_mylinks">
-            <img src="/Front-End/portafolio_Mirko_Ponce/img/github_icon.png" alt="github icon" width="50" height="50">
-            <a href="https://github.com/Mk0dsiker">my github</a>
-            <img src="/Front-End/portafolio_Mirko_Ponce/img/linkedin_icon.png" alt="linkedin icon" width="60" height="60">
-            <a href="https://www.linkedin.com/in/mkstudio/">my linkedin</a>
-            <img src="/Front-End/portafolio_Mirko_Ponce/img/gmail_icon.png" alt="gmail icon" width="50" height="50">
+            <img src="/Coding_Dojo_Bootcamp_Publico/Front-End/portafolio_Mirko_Ponce/img/github_icon.png" alt="github icon" width="50" height="50">
+            <a href="https://github.com/Mk0dsiker" target="_blank">my github</a>
+            <img src="/Coding_Dojo_Bootcamp_Publico/Front-End/portafolio_Mirko_Ponce/img/linkedin_icon.png" alt="linkedin icon" width="60" height="60">
+            <a href="https://www.linkedin.com/in/mkstudio/" target="_blank">my linkedin</a>
+            <img src="/Coding_Dojo_Bootcamp_Publico/Front-End/portafolio_Mirko_Ponce/img/gmail_icon.png" alt="gmail icon" width="50" height="50">
             <a href="mailto:mko.bartender@gmail.com">my email</a>
         </div>
     </header>
@@ -53,8 +53,8 @@
         </div>
         <div class="div_snakes">
             <h2>Social Snakes</h2>
-            <img src="/Front-End/portafolio_Mirko_Ponce/img/app_icon.png" alt="social snakes">
-            <p>Aplicación de Red Social hecha en Pyton <a href="">code</a> | <a href="">deployed</a></p>
+            <img src="/Coding_Dojo_Bootcamp_Publico/Front-End/portafolio_Mirko_Ponce/img/app_icon.png" alt="social snakes">
+            <p>Aplicación de Red Social hecha en Pyton <a href="#">code</a> | <a href="#">deployed</a></p>
             
         </div>
         <div class="div_form">
@@ -63,14 +63,20 @@
                 <div>
                     <label for="id_name">Nombre :</label>
                     <input type="text" name="name" id="id_name" required>
+                </div>
+                <div>
                     <label for="id_email">Email :</label>
                     <input type="email" name="email" id="id_email" required>
                 </div>
                 <div>
                     <label for="id_mesg">Mensaje :</label>
+                </div>
+                <div>
                     <textarea name="message" id="id_mesg" cols="30" rows="10" required></textarea>
                 </div>
-                <input type="submit" value="Enviar Mensaje">
+                <div>
+                <input class="sendMessage" type="submit" value="Enviar Mensaje">
+                </div>  
             </form>
         </div>
     </main>
