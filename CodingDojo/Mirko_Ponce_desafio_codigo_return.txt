@@ -1,0 +1,189 @@
+Fragmento de código 1
+
+t-diagram Main
+variables       |   values
+console.log     |   hello
+console.log     |   Dojo
+
+
+
+Fragmento de código 2
+
+t-diagram Main
+variables       |   values
+result          |   15
+console.log     |   hello
+console.log     |   result is 15
+
+
+
+Fragmento de código 3
+
+t-diagram Main
+variables       |   values
+result          |   18 
+console.log     |   num is 3
+console.log     |   result is 18
+
+t-diagram numPlus(3)
+variables       |   values
+num             |   3
+
+
+
+Fragmento de código 4
+
+t-diagram Main
+variables       |   values
+num             |   15
+console.log     |   15
+result          |   10
+console.log     |   10
+console.log     |   10
+console.log     |   15
+
+t-diagram logAndReturn(10)
+variables       |   values
+num2            |   10
+
+
+
+Fragmento de código 5
+
+t-diagram Main
+variables       |   values
+num             |   15
+console.log     |   15
+result          |   20
+console.log     |   10
+console.log     |   20
+console.log     |   15
+
+t-diagram timesTwo(10)
+variables       |   values
+num2            |   10
+
+
+
+Fragmento de código 6
+
+t-diagram Main
+variables       |   values
+result          |   16
+console.log     |   num is 3
+y               |   6
+console.log     |   num is 5
+y               |   10
+console.log     |   result is 16
+
+t-diagram timesTwoAgain(3)
+variables       |   values
+num             |   3
+
+t-diagram timesTwoAgain(5)
+variables       |   values
+num             |   5    
+
+
+
+Fragmento de código 7
+
+t-diagram Main                            
+variables       |   values
+console.log     |   5
+console.log     |   8
+
+t-diagram printSumNums(2,3)                            
+variables       |   values
+num1            |   2
+num2            |   3
+
+t-diagram printSumNums(3,5)                            
+variables       |   values
+num1            |   3
+num2            |   5
+
+
+
+Fragmento de código 8
+
+t-diagram Main
+variables       |   values
+console.log     |   2
+console.log     |   3     
+
+t-diagram printSumNums(2,3)                            
+variables       |   values
+num1            |   2
+num2            |   3
+
+t-diagram printSumNums(3,5)                            
+variables       |   values
+num1            |   3
+num2            |   5
+
+
+
+Fragmento de código 9
+
+t-diagram Main
+variables       |   values
+result          |   13
+console.log     |   result is 13
+
+t-diagram sumNums(2,3)                            
+variables       |   values
+num1            |   2
+num2            |   3
+sum             |   5
+
+t-diagram sumNums(3,5)                            
+variables       |   values
+num1            |   3
+num2            |   5
+sum             |   8
+
+
+
+Fragmento de código 10
+t-diagram Main
+variables       |   values
+result          |   19
+console.log     |   result is 19    
+
+t-diagram sumNums(2,3)                            
+variables       |   values
+num1            |   2
+num2            |   3
+sum             |   5*
+
+t-diagram sumNums(3,sumNums(2,1))                            
+variables       |   values
+num1            |   3
+num2            |   3
+sum             |   6*
+
+t-diagram sumNums(2,1)                            
+variables       |   values
+num1            |   2
+num2            |   1
+sum             |   3
+
+t-diagram sumNums(sumNums(2,1),sumNums(2,3))                            
+variables       |   values
+num1            |   3
+num2            |   5
+sum             |   8*
+
+t-diagram sumNums(2,1)                            
+variables       |   values
+num1            |   2
+num2            |   1
+sum             |   3
+
+t-diagram sumNums(2,3)                            
+variables       |   values
+num1            |   2
+num2            |   3
+sum             |   5
+

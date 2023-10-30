@@ -15,6 +15,13 @@ etiqueta {
 
 */
 
+/* CSS Reset */
+* {
+    margin:0;
+    padding: 0;
+    border:0;
+}
+
 h2 {
     color: blue;
     font-size: 40px;
@@ -96,5 +103,6 @@ div.background {
     background-color: rebeccapurple;
     width: 500px;
     height: 500px;
+    
     
 }
