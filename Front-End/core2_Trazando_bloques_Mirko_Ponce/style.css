@@ -1,30 +1,55 @@
-.container{
-    width: 950px;
+.container {
+    box-sizing: border-box; /*definir border-box para que la caja
+                                mida siempre 950px*/
     background-color: silver;
-    margin: 0px auto;
-}
-.top-nav {
-    height: 150px;
-    background-color: green;
-}
-.side-nav {
-    height: 300px;
-    width: 200px;
-    background-color: blue;
-}
-.main {
-    height: 400px;
-    width: 700px;
-    background-color: red;
-}
-.sub-content {
-    height: 200px;
-    width: 210px;
-    background-color: yellow;
-}
-#advertisement {
-    height: 120px;
-    width: 660px;
-    background-color: purple;
+    width: 950px;
 
+    padding: 20px;  /*relleno uniforme de 20px para todo el contenedor*/
+}
+
+.top-nav {
+    background-color: green;
+    width: 910px; /*se modifica ancho de top para respetar tamaño container y su padding*/
+    height: 150px;
+
+    margin-bottom: 20px; /*margin_bottom para separar nav de side y main por abajo*/
+
+    
+}
+
+.side-nav{
+    background-color: blue;
+    width: 200px;
+    height: 300px;
+
+    margin: 0px 20px 20px 0px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.main {
+    background-color: red;
+    width: 680px; /*se modifica ancho de main para respetar tamaño container y su padding*/
+    height: 400px;
+
+    box-sizing: border-box; /*definir border-box para que la caja
+    mida siempre 680px*/
+    margin: 0px 0px 20px 0px;
+    display: inline-block;
+    padding: 20px;
+}
+
+.sub-content {
+    background-color: yellow;
+    width: 210px;
+    height: 200px;
+
+    display: inline-block;
+    margin-bottom: 20px; /*margin_bottom para separar sub content de advertisement por abajo*/
+}
+
+#advertisement {
+    background-color: purple;
+    width: 640px; /*se modifica ancho de advertisement para respetar tamaño main y su padding*/
+    height: 120px;
 }
