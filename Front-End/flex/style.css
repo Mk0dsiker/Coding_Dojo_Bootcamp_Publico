@@ -1,0 +1,45 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+div {
+    border: 1px solid black;
+    padding: 10px;
+    margin: 5px;
+}
+
+.container1 {
+background-color: red;
+width: 1200px;
+height: 200px;
+display: flex;
+/* Acomodo Vertical */
+align-items: stretch;
+ /*Admite valores: stretch, center, flex-start, flex-end*/
+ /* Acomodo Horizontal */
+ justify-content: space-around;
+ /* Admite valores: flex-start, flex-end, center,
+ space-between, space-evenly, space-around */
+ /* Direccion de nuestro flex */
+ flex-direction: row;
+ /* Admite valores: row, column, row-reverse, column-reverse */
+}
+
+.s1, .s2, .s3 {
+    background-color: yellow;
+    width: 200px;   
+}
+
+.container2 {
+    background-color: rebeccapurple;
+    width: 1200px;
+    height: 200px; 
+    display: flex; 
+}
+
+.container2 > div {
+    background-color: white;
+    flex: 1;
+}
