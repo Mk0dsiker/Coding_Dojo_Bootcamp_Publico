@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+body {
+    position: relative;
+}
+
+.container {
+    border: 3px solid black;
+    height: 1500px;
+}
+
+.element {
+    background-color: grey;
+    padding: 10px;
+
+    /* position: relative;
+    z-index: 2; */
+}
+
+.mainElement {
+    background-color: yellow;
+    padding: 10px;
+    /* position: static; por Default: mi elemento es estatico, que no se mueve */
+    position: relative; /*Me permite el uso de las propeidades, top, left, bottom y rigth, desplaza el elemento a una posicion relativa a la original */
+    z-index: -1;
+    /* position: absolute; desplaza el elemento a una posicion relativa a la del contenedor padre, siempre y cuando este tenga la propiedad position: relative; */
+    /* position: fixed; Se fija en su la posicion designada, aun cuando hacemos scroll*/
+    /* position: sticky; */
+
+    /* Movimiento: top, left, bottom, rigth */
+    top: 20px;
+    left: 15px;
+}
