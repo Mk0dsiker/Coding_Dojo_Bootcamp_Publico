@@ -1,3 +1,9 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
 header {
     text-align: center;
 }
@@ -18,4 +24,88 @@ nav {
     display: inline-block;
     border: 1px solid black;
     text-align: center 
+}
+
+.sHcontainer {
+    margin: 0px auto;
+    box-sizing: border-box;
+
+    background-color: grey;
+    width: 1000px;
+    height: 2000px;
+
+    padding: 20px;
+}
+
+.sHheader {
+    box-sizing: border-box;
+    background-color: lightcyan;
+    width: 940px;
+    height: 200px;
+
+    margin: 10px;
+    padding: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position:absolute;
+}
+
+
+#dNamechar {
+
+    background-color: yellow;
+    width: 100%;
+    height: 100px;
+
+    position: absolute;
+    z-index: 1;
+    
+    display: flex;
+    flex-direction: column;
+
+    border: 1px solid black;
+
+}
+
+
+#dBackchar {
+    background-color: red;
+    height: 150px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+    left: 150px;
+    z-index: 2;
+
+    border: 1px solid black;
+}
+
+.back1, .back2 {
+    background-color: white;
+    display: flex;
+    align-items: center;
+
+    margin: 2px;
+    
+}
+
+.back1minor, .back2minor {
+    display: flex;
+    flex-direction: column;
+    
+    margin: 2px;
+    border: 1px solid black;
+
+    text-align: left;
+}
+
+#idNamechar {
+    width: 200px;
 }
