@@ -11,6 +11,9 @@ body {
 }
 
 /* CSS Barra de navegación */
+header {
+    width: 100%;
+}
 
 nav {
     background-color: #333333;
