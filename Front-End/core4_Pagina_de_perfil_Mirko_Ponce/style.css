@@ -51,21 +51,34 @@ nav h1 {
 
 .container {
     background-color: grey;
-    width: 1200px;
-    height: 2000px;
+    width: 1150px;
+    height: 1000px;
 
     margin: 50px auto;
+
+    display: flex;
+
+}
+.mainSection {
+    /* background-color: yellow; */
+    width: 750px;
+    height: 900px;
+
+    display: flex;
+    flex-direction: column;
 }
 
 .mainCard {
-    background-color: yellow;
-    width: 800px;
-    height: 500px;
+    
+    width: 700px;
+    height: 450px;
+
+    margin: 20px;
 
     display: flex;
     flex-direction: column;
 
-    position: absolute;
+    position: relative;
 }
 
 .mainCard img {
@@ -90,14 +103,74 @@ nav h1 {
 
 .cardBody {
     background-color: white;
-    box-sizing: border-box;
-    height: 350px;
+    /* box-sizing: border-box; */
+    height: 300px;
 
-    border-left: 2px solid silver;
-    border-bottom: 2px solid silver;
-    border-right: 2px solid silver;
+    border-left: 5px solid silver;
+    border-bottom: 5px solid silver;
+    border-right: 5px solid silver;
 
-    padding: 50px;
+    /* padding: 50px; */
 
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.education {
+    /* background-color: yellow; */
+    width: 700px;
+    height: 300px;
+
+    margin: 20px;
+
+    display: flex;
+    flex-direction: column;
+
+    position: relative;
+}
+
+.cardHead2 {
+    /* box-sizing: border-box; */
+    
+    background-color: #333333;
+    height: 150px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+
+    color: white;
+    padding-top: 20px;
+    padding-left: 30px;
+    font-size: 25px;
+    text-align: left;
+    letter-spacing: 2px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.aside {
+    width: 400px;
+    height: 400px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.request, .conections {
+    margin: 20px;
+}
+
+.cardHead3 {
+    /* box-sizing: border-box; */
+    
+    background-color: #333333;
+    height: 50px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+
+    color: white;
+    padding-top: 10px;
+    padding-left: 30px;
+    font-size: 25px;
+    text-align: left;
+    letter-spacing: 1px;
     font-family: 'Roboto', sans-serif;
 }
