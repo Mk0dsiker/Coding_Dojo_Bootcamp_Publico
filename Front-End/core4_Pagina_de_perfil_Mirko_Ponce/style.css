@@ -7,13 +7,11 @@
 
 /* CSS Predeterminado */
 body {
+    width: 100%;
     font-family: 'Roboto', sans-serif;
 }
 
 /* CSS Barra de navegación */
-header {
-    width: 100%;
-}
 
 nav {
     background-color: #333333;
