@@ -3,3 +3,25 @@
     padding: 0px;
     border: 0px;
 }
+
+header {
+    text-align: center;
+}
+
+.imgHeader {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.namePag {
+    padding:10px 5px;
+    border: 1px solid black;
+    text-align: center;
+}
+nav {
+    width: 98%;
+    padding: 10px 5px;
+    display: inline-block;
+    border: 1px solid black;
+    text-align: center 
+}
