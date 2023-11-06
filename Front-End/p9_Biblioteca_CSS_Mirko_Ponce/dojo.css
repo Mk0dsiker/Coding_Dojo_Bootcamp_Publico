@@ -1,0 +1,134 @@
+/* CSS reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Clase fixed-width container que se "autocentrará" a sí misma */
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* CSS Boton */
+
+.btn {
+    background-color: #2B78E4;
+    color: #FFFFFF;
+    border: 1px solid #000000;
+    box-shadow: 2px 2px 0px black;
+    font-size: 9px;
+    width: 100px;
+    height: 20px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+/* CSS Filas y columnas */
+.row {
+    display: flex;
+    height: 70px;
+
+    margin-bottom: 30px;
+}
+
+.col {
+    flex: 1;
+
+    color: white;
+    font-size: 20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 700;
+
+    display: flex;
+    align-items: center;
+
+
+    background-color: rgb(34, 112, 86);
+    width: 100px;
+    height: 70px;
+
+    margin: 5px;
+    padding-left: 20px;
+    border: 1 px solid black;
+}
+
+/* CSS Navegación */
+nav {
+    background-color: #333333;
+    width: 100%;
+    height: 60px;
+    color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h1 {
+    margin-left: 10px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-links li {
+    margin-right: 15px;
+}
+
+/* CSS Tarjeta */
+.card {
+    margin: 50px auto;
+    width: 500px;
+    /* border: 2px solid silver; */
+    /* border-radius: 5px; */
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.cardHeader {
+    background-color: #17a2b8;
+    height: 80px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.cardHeader img {
+    
+    width: 80px;
+    position: relative;
+    top: 30px;
+    left: 40px;
+
+    border: 2px solid silver;
+    border-radius: 50%;
+    background-color: black;
+    padding: 5px;
+}
+
+.cardBody {
+    box-sizing: border-box;
+    height: 190px;
+
+    border-left: 2px solid silver;
+    border-bottom: 2px solid silver;
+    border-right: 2px solid silver;
+
+    padding: 50px;
+
+    font-family: 'Roboto', sans-serif;
+}
+
+.cardBody > * {
+    margin-bottom: 5px;
+}
