@@ -1,26 +1,38 @@
+/* CSS reset */
+
 * {
     margin: 0;
     padding: 0;
     border: 0;
 }
 
+/* CSS Fuente predeterminada */
+
 body {
     font-family: 'Roboto', sans-serif;
 }
 
+
+/* CSS Header */
+
 nav {
     background-color: #333333;
     width: 100%;
-    height: 60px;
+    /* height: 80px; */
     color: white;
 
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-around;
+}
+
+.head1 {
+    display: flex;
 }
 
 nav h1 {
-    margin-left: 10px;
+    font-size: 50px;
+    margin-left: 20px;
+    margin-right: 50px;
 }
 
 .nav-links {
@@ -31,6 +43,7 @@ nav h1 {
 }
 
 .nav-links a {
+    font-size: 25px;
     text-decoration: none;
     color: white;
 }
@@ -40,8 +53,12 @@ nav h1 {
 }
 
 .btn {
-    font-family: 'Roboto', sans-serif;
     background-color: #18a2b8;
+    height: 50px;
+
+    margin: 10px 20px;
+
+    font-size: 25px;    
     color: white;
     border: 2px solid black;
     box-shadow: 3px 3px 0 1px rgba(0,0,0,1);
@@ -49,8 +66,9 @@ nav h1 {
     cursor: pointer;
 }
 
+/* CSS Contenido Principal */
 .container {
-    background-color: grey;
+    /* background-color: grey */
     width: 1150px;
     height: 1000px;
 
@@ -60,7 +78,7 @@ nav h1 {
 
 }
 .mainSection {
-    /* background-color: yellow; */
+    
     width: 750px;
     height: 900px;
 
@@ -81,8 +99,8 @@ nav h1 {
     position: relative;
 }
 
-.mainCard img {
-    width: 180px;
+.cardHead > img {
+    width: 150px;
     position: relative;
     top: 50px;
     left: 50px;
@@ -103,21 +121,29 @@ nav h1 {
 
 .cardBody {
     background-color: white;
-    /* box-sizing: border-box; */
-    height: 300px;
+    box-sizing: border-box;
+    height: 400px;
 
     border-left: 5px solid silver;
     border-bottom: 5px solid silver;
     border-right: 5px solid silver;
 
-    /* padding: 50px; */
-
+    padding: 50px;
+    align-items: center;
+    font-size: 25px;
     font-family: 'Roboto', sans-serif;
 }
 
+.cardBody > *, .cardBody2 > *, .cardBody3 > * {
+    margin: 15px 10px;
+}
+
+.icons {
+    width: 20px;
+}
 
 .education {
-    /* background-color: yellow; */
+    
     width: 700px;
     height: 300px;
 
@@ -130,47 +156,151 @@ nav h1 {
 }
 
 .cardHead2 {
-    /* box-sizing: border-box; */
-    
+        
     background-color: #333333;
-    height: 150px;
+    height: 80px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-
+    
+    padding: 20px 20px 20px 30px;
+    
     color: white;
-    padding-top: 20px;
-    padding-left: 30px;
     font-size: 25px;
     text-align: left;
     letter-spacing: 2px;
-    font-family: 'Roboto', sans-serif;
+    
 }
 
-.aside {
-    width: 400px;
-    height: 400px;
+.cardBody2 {
+    background-color: white;
+    
+    border-left: 5px solid silver;
+    border-bottom: 5px solid silver;
+    border-right: 5px solid silver;
+
+    padding: 20px 10px;
+
+    font-size: 20px;
 
     display: flex;
     flex-direction: column;
 }
+
+.cardBody2 > p {
+    color: silver;
+}
+
+.requestBox, .conectBox {
+    display: flex;
+    align-items: center;
+}
+
+.imgRequest, .imgConect {
+    
+    width: 60px;
+    border-radius: 50%;
+}
+
+.requestBox p, .conectBox p {
+    padding-left: 10px;
+    flex: 1;
+
+}
+
+.checkButtons img {
+    flex: 1;
+    width: 50px;
+}
+
+
 
 .request, .conections {
     margin: 20px;
 }
 
 .cardHead3 {
-    /* box-sizing: border-box; */
     
     background-color: #333333;
-    height: 50px;
+    height: 30px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
 
+    padding: 20px 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cardHead3 p {
     color: white;
-    padding-top: 10px;
-    padding-left: 30px;
+    
+    padding-left: 10px;
     font-size: 25px;
-    text-align: left;
+    
     letter-spacing: 1px;
     font-family: 'Roboto', sans-serif;
 }
+
+.requestCount {
+    background-color: silver;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    
+    text-align: center;
+    
+}
+
+.requestCount p {
+    padding: 8px;
+}
+
+.conectCount {
+    background-color: silver;
+    width: 80px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.conectCount p {
+    font-size: 22px;
+    padding: 8px;
+
+    text-align: center;
+    justify-content: center;
+}
+
+.cardBody3 {
+    background-color: white;
+    /* box-sizing: border-box; */
+    /* height: 250px; */
+
+    border-left: 5px solid silver;
+    border-bottom: 5px solid silver;
+    border-right: 5px solid silver;
+
+    padding: 20px 10px;
+
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.viewMore {
+    background-color: white;
+    /* box-sizing: border-box; */
+    height: 30px;
+
+    border-left: 5px solid silver;
+    border-bottom: 5px solid silver;
+    border-right: 5px solid silver;
+
+    padding: 20px;
+    
+    font-size: 25px;
+    
+}
+
