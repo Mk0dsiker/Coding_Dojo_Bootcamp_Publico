@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos onclick</title>
+    <link rel="stylesheet" href="/Coding_Dojo_Bootcamp_Publico/Front-End/core5_Eventos_onclick_Mirko_Ponce/style.css">
+</head>
+<body>
+    <header>
+        <div class="headerContainer">
+            <h1>Dojonary</h1>
+            <input id="searchBox" type="text" placeholder="Search">
+            <button class="btn" type="button" onclick="changeLogin(this)" ondblclick="changeLoginBack(this)">Login</button>
+        </div>
+    </header>
+    <main>
+        <div class="mainContainer">
+            <div class="entrys">
+                <div class="dojonaryEntry">
+                    <div class="entryWord">
+                        <h1>ninja</h1>
+                        <p><em>noun</em></p>
+                        <p>Plural : ninjas</p>
+                        <button class="entryButton" type="button" onclick="addLikesA(this)">Likes</button>
+                    </div>
+                    <div class="entryDefinition">
+                        <p>A practitioner skilled  in the <a href="#">Japanese</a> art of <a href="">ninjutsu</a></p>
+                    </div>
+                </div>
+                <div class="dojonaryEntry">
+                    <div class="entryWord">
+                        <h1>ninja</h1>
+                        <p><em>noun</em></p>
+                        <p>Plural : ninjas</p>
+                        <button class="entryButton" type="button" onclick="addLikesB(this)">Likes</button>
+                    </div>
+                    <div class="entryDefinition">
+                        <p>A <a href="#">programmer</a> who breaks down problems with <a href="#">zen</a>-like focus</p>
+                    </div>
+                </div>
+            </div>
+            <div class="aside">
+                <p>Dojonary is defined by YOU!</p>
+                <button class="asideButton" type="button" onclick="eliminarAddDef(this)">Add Definition</button>
+            </div>
+        </div>
+    </main>
+    
+    <script src="/Coding_Dojo_Bootcamp_Publico/Front-End/core5_Eventos_onclick_Mirko_Ponce/script.js"></script>
+</body>
+</html>

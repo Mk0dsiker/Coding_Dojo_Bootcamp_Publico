@@ -1,0 +1,130 @@
+/* CSS reset */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    border: 0px
+}
+
+/* CSS header */
+
+.headerContainer {
+box-sizing: border-box;
+
+    background-color: grey;
+    width: 800px;
+    height: 50px;
+
+    margin: 0px auto;
+    padding: 5px 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#searchBox {
+    /* background-color: yellow; */
+    width: 400px;
+    height: 30px;
+
+    padding-left: 10px;
+}
+
+.btn {
+    background-color: #2B78E4;
+    width: 70px;
+    height: 30px;
+
+    padding: 5px;
+    border: 1px solid #000000;
+    box-shadow: 2px 2px 0px black;
+
+    color: #FFFFFF;
+    
+    cursor: pointer;
+}
+
+/* CSS Main */
+
+.mainContainer{
+    box-sizing: border-box;
+    /* background-color: red; */
+    width: 800px;
+
+    margin: 20px auto;
+    
+    display: flex;
+    align-items:start;
+    justify-content: space-between;
+
+}
+
+.entrys {
+    /* background-color: yellow; */
+    width: 500px;
+}
+
+.dojonaryEntry {
+    background-color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 3px solid black;
+}
+
+.entryWord, .aside {
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+
+    padding: 20px;
+}
+
+.entryWord > *, .aside > * {
+    margin: 5px auto;
+}
+
+.entryButton {
+    background-color: rgb(250, 178, 70);
+    width: 60px;
+    height: 30px;
+
+    padding: 5px;
+    border: 1px solid #000000;
+    box-shadow: 2px 2px 0px black;
+
+    color: #FFFFFF;
+    
+    cursor: pointer;
+}
+
+.aside {
+    background-color: white;
+    width: 200px;
+    height: 120px;
+
+    border: 3px solid black;
+
+    font-size: 28px;
+    text-align: left;
+}
+
+.asideButton {
+    background-color: #1f8f25;
+    /* width: 50px; */
+    height: 30px;
+
+    padding: 5px;
+    border: 1px solid #000000;
+    box-shadow: 2px 2px 0px black;
+
+    color: #FFFFFF;
+    
+    cursor: pointer;
+}
