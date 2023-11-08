@@ -1,0 +1,120 @@
+/* CSS reset */
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* CSS Header */
+
+.header1 {
+    background-color: black;
+    width: 800px;
+
+    margin: 0px auto;
+    padding: 20px;
+
+    color: white;
+}
+
+
+/* CSS Main */
+body {
+    margin: 0px auto;
+}
+
+.yourFeed {
+    
+    text-align: center;
+    padding: 30px;
+
+}
+/* Contenedor que encierra aside y contenedor del contenedor de tarjetas */
+.mainContainer {
+    width: 800px;
+
+    margin: 0px auto;
+
+    display: flex;
+    justify-content: space-between;
+
+}
+/* Contenedor que encierra mis contenedores de tarjetas */
+.container {
+    width: 450px;
+}
+
+aside {
+    /* background-color: green; */
+    width: 200px;
+    height: 200px;
+
+    padding: 30px;
+    border: 2px solid black;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+aside > img {
+    width: 100px;
+    border-radius: 50%;
+}
+
+/* Contenedor que encierra las tarjetas */
+.cardSmall {
+    /* background-color: pink; */
+
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 2px solid black;
+}
+/* Contenedore que encierra Nombre, likes y button */
+.row {
+    /* background-color: yellow; */
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    
+    margin: 20px;
+}
+
+/* Botón */
+.btn {
+    background-color: rgb(250, 178, 70);
+    width: 60px;
+    
+    padding: 5px;
+    border: 1px solid #000000;
+    box-shadow: 2px 2px 0px black;
+
+    color: #FFFFFF;
+    
+    cursor: pointer;
+
+    text-align: center;
+    
+}
+/* Contenedor que encierra el lorem */
+.entry {
+    /* background-color: yellow; */
+    padding-left: 10px;
+    padding-bottom: 20px;
+    text-align: left;
+}
+
+
+/* CSS index 1 */
+.containerIndex1 {
+    width: 450px;
+    
+    margin: 100px auto;
+    padding: 10px;
+    border: 2px solid black;
+    
+}

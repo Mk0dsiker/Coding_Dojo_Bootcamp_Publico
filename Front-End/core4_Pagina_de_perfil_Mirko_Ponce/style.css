@@ -139,6 +139,11 @@ nav h1 {
     margin: 15px 10px;
 }
 
+.darkMode {
+    background-color: black;
+    color: white;
+}
+
 .icons {
     width: 20px;
 }

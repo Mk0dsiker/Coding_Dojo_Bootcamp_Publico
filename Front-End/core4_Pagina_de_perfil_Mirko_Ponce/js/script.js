@@ -36,11 +36,22 @@ function editar_perfil() {
         elemento_nombre.innerText = input.value;
     }    
 
+    elemento_nombre.style.color = "white";
+    elemento_nombre.style.backgroundColor = "blue";
+
     document.querySelector(".location").innerHTML = '<img class="icons" src="/Coding_Dojo_Bootcamp_Publico/Front-End/core4_Pagina_de_perfil_Mirko_Ponce/img/icons/map-marker.png" alt="map marker">Playa Ancha';
 
     document.querySelector('.cardBody h5').innerHTML = 'Animador Digital <span>|</span> Desarrollador Web Front-End<span>|</span> Técnico legend'
 
-    elemento_nombre.style.color = "white";
-    elemento_nombre.style.backgroundColor = "blue";
+    var elemento_p = document.querySelector(".cardBody h5");
+    if(elemento_p.classList.contains("darkMode")){
+        //quitamos la clase si ya la posee
+        elemento_p.classList.remove("darkMode");
+    } else {
+        //agregamos la clase
+        elemento_p.classList.add("darkMode");
+    }
+    
 
+    
 }
