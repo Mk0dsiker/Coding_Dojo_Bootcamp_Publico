@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tiempo Dojo</title>
     <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -22,47 +26,47 @@
             <h2>San José</h2>
             <form class="tempeture">
             <label>Mostrar la temperatura en: </label>
-            <select name="" id="">
-                <option value="C">C°</option>
-                <option value="F">F°</option>
+            <select onchange="cambiarTemperatura()">
+                <option>C°</option>
+                <option>F°</option>
             </select>
         </form>
         </div>
         <div class="cardContainer">
             <div class="card">
                 <h2>Today</h2>
-                <img src="img/some_clouds.png" alt="some clouds">
-                <p>Some clouds</p>
+                <img src="img/some_rain.png" alt="some rain">
+                <p>Some rain</p>
                 <div class="indexTemperature">
-                    <p class="min">12°</p>
-                    <p class="max">28°</p>
+                    <p class="min" id="temp0">18°</p>
+                    <p class="max" id="temp1">24°</p>
                 </div>
             </div>
             <div class="card">
-                <h2>Today</h2>
-                <img src="img/some_clouds.png" alt="some clouds">
-                <p>Some clouds</p>
+                <h2>Tomorrow</h2>
+                <img src="img/some_sun.png" alt="some sun">
+                <p>Some sun</p>
                 <div class="indexTemperature">
-                    <p class="min">12°</p>
-                    <p class="max">28°</p>
+                    <p class="min" id="temp2">19°</p>
+                    <p class="max" id="temp3">27°</p>
                 </div>
             </div>
             <div class="card">
-                <h2>Today</h2>
+                <h2>Friday</h2>
                 <img src="img/some_clouds.png" alt="some clouds">
                 <p>Some clouds</p>
                 <div class="indexTemperature">
-                    <p class="min">12°</p>
-                    <p class="max">28°</p>
+                    <p class="min" id="temp4">16°</p>
+                    <p class="max" id="temp5">21°</p>
                 </div>
             </div>
             <div class="card">
-                <h2>Today</h2>
-                <img src="img/some_clouds.png" alt="some clouds">
-                <p>Some clouds</p>
+                <h2>Saturday</h2>
+                <img src="img/some_sun.png" alt="some clouds">
+                <p>Some sun</p>
                 <div class="indexTemperature">
-                    <p class="min">12°</p>
-                    <p class="max">28°</p>
+                    <p class="min" id="temp6">21°</p>
+                    <p class="max" id="temp7">26°</p>
                 </div>
             </div>
         </div>
@@ -74,7 +78,7 @@
                 <h1>Stop!, cookie time</h1>            
                 <p>We use cookies (sadly no the edible ones) to personalize content and ads, to provide social media features and to analyse our traffic. <a href="#">Read more...</a></p>
             </div>
-            <button class="btn" >Acepto</button>
+            <button class="btn" onclick="eliminarCookie()">Acepto</button>
         </div>
     </footer>
     <script src="js/script.js"></script>

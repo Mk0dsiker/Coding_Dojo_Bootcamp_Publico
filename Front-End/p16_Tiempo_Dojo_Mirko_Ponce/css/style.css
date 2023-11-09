@@ -8,7 +8,8 @@
 
 /* CSS body */
 body {
-    height: 100%;
+    /* height: 100%; */
+    font-family: 'Roboto', sans-serif;
 }
 
 /* CSS header */
@@ -63,13 +64,22 @@ main {
 }
 
 .sanJose {
-    
+    margin-bottom: 30px;
     padding: 20px 0;
     border-bottom: 2px solid black;
 
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.sanJose h2 {
+    font-weight: 700;
+    font-size: 35px;
+}
+
+select {
+    border: 1px solid black;
 }
 
 .cardContainer {
@@ -81,10 +91,10 @@ main {
 }
 
 .card {
-    background-color: silver;
+    background-color: #eeeeee;
 
     padding: 20px;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     
     display: flex;
     flex-direction: column;
@@ -100,11 +110,24 @@ main {
     border-radius: 50%;
 }
 
+.card h2 {
+    font-weight: 700;
+    font-size: 35px;
+}
+
+.card > p {
+    font-weight: 700;
+    font-size: 18px;
+}
+
 .indexTemperature {
-    background-color: yellow;
+    /* background-color: yellow; */
     width: 100px;
     display: flex;
     justify-content: space-between;
+
+    font-weight: 700;
+    font-size: 20px;
 }
 
 .min {
@@ -117,11 +140,19 @@ main {
 
 /* CSS footer */
 
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
 .cookie {
     box-sizing: border-box;
-    background-color: lightblue;
+    background-color: #eeeeee;
 
     width: 1000px;
+    height: 200px;
+
     margin: 0 auto;
     padding: 30px;
     border: 4px solid black;
@@ -129,6 +160,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
 }
 
 .cookie > img {
@@ -162,6 +194,6 @@ main {
 
     color: #FFFFFF;
     font-size: 20px;
-    
+        
     cursor: pointer;
 }
