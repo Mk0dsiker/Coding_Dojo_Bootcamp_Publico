@@ -6,6 +6,11 @@
     border: 0;
 }
 
+/* CSS body */
+body {
+    height: 100%;
+}
+
 /* CSS header */
 
 header {
@@ -42,20 +47,121 @@ header {
     list-style: none;
     margin-left: 20px;
 
-    color: white;
+}
+
+.ulNavHeader a {
+    text-decoration: none;
     font-size: 30px;
+    color: white;
 }
 
 /* CSS Main */
 
-.sanJose {
+main {
     width: 1000px;
-
     margin: 0 auto;
+}
+
+.sanJose {
+    
     padding: 20px 0;
     border-bottom: 2px solid black;
 
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.cardContainer {
+    /* background-color: #2B78E4; */
+    /* width: 1000px; */
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    background-color: silver;
+
+    padding: 20px;
+    border: 2px solid black;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.card > * {
+    margin: 10px;
+}
+.card img {
+    width: 180px;
+    border-radius: 50%;
+}
+
+.indexTemperature {
+    background-color: yellow;
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.min {
+    color: blue;
+}
+
+.max {
+    color: red;
+}
+
+/* CSS footer */
+
+.cookie {
+    box-sizing: border-box;
+    background-color: lightblue;
+
+    width: 1000px;
+    margin: 0 auto;
+    padding: 30px;
+    border: 4px solid black;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cookie > img {
+    width: 300px;
+}
+
+.cookie > * {
+    margin: 20px;
+}
+
+.cookieContent h1 {
+
+    font-size: 40px;
+    margin: 10px;
+}
+
+.cookieContent p {
+
+    font-size: 25px;
+    margin: 10px;
+}
+
+.btn {
+    background-color: #2B78E4;
+    width: 200px;
+    height: 50px;
+
+    padding: 5px;
+    border: 1px solid #000000;
+    box-shadow: 2px 2px 0px black;
+
+    color: #FFFFFF;
+    font-size: 20px;
+    
+    cursor: pointer;
 }
