@@ -1,0 +1,61 @@
+
+/* CSS reset */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* CSS header */
+
+header {
+    background-color: lightblue;
+    height: 100px;
+
+    display: flex;
+    align-items: center;
+}
+
+.navHeader {
+    /* background-color: blue; */
+    width: 1000px;
+
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;    
+}
+
+.navHeader h1 {
+    flex: 2;
+
+    color:  white;
+    font-size: 50px;
+}
+
+.ulNavHeader {
+    flex: 1;
+    display: flex;
+}
+
+.ulNavHeader li {
+    list-style: none;
+    margin-left: 20px;
+
+    color: white;
+    font-size: 30px;
+}
+
+/* CSS Main */
+
+.sanJose {
+    width: 1000px;
+
+    margin: 0 auto;
+    padding: 20px 0;
+    border-bottom: 2px solid black;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
