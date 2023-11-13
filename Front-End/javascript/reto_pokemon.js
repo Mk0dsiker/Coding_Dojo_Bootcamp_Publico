@@ -93,13 +93,14 @@ var pokémon = [ //Arreglo
 //var nombre_filtrados = nombres.filter(nombre => nombre.startsWith("P"));
 
 var pokemon_99 = pokémon.filter(poke => poke.id > 99);          //function pokemon_99(element) (this)
-console.log(pokemon_99);
+var nombres_poke99 = pokemon_99.map(poke => poke.name);
+console.log(nombres_poke99);
 
 /* PRINT the pokémon objects whose id is evenly divisible by 3
     Lista los OBJETOS en el cual el id es divisible entre 3
 */
 
-var pokemon_idd3 = pokémon.filter(poke => poke.id % 3 ===0);
+var pokemon_idd3 = pokémon.filter(poke => poke.id % 3 === 0);
 console.log(pokemon_idd3);
 
 /* PRINT the pokémon objects that have more than one type
@@ -114,11 +115,16 @@ console.log(pokemon_2tipos);
 */
 
 var pokemon_poison = pokémon.filter(poke => poke.types == "poison");
-console.log(pokemon_poison);
+var nombres_poke_poison = pokemon_poison.map(pokename => pokename.name);
+console.log(nombres_poke_poison);
 
 /* PRINT the names of the pokémon whose only type is "poison"
     Lista los NOMBRES de pokemon que TENGA tipo "poison"
 */
 
 var pokemon_poison = pokémon.filter(poke => poke.types.includes("poison"));
-console.log(pokemon_poison);
+var nombres_poke_poison = pokemon_poison.map(pokename => pokename.name);
+console.log(nombres_poke_poison);
+
+var pokeID99 = pokémon.filter(poke => poke.id > 99).map(poke => poke.name);
+console.log(pokeID99);
