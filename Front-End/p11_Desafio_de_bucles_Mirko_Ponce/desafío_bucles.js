@@ -17,7 +17,7 @@ for( var i = 100; i >= 0; i--){
 console.log("------------------");
 /* Imprime la secuencia Usando un bucle, escribe un código que haga que console.log imprima los valores en esta secuencia  4, 2.5, 1, -0.5, -2, -3.5.  */
 
-for(var i = 4; i >= -4; i--){
+for(var i = 4; i >= -4; i-=1.5){
     console.log(i);
 }
 console.log("------------------");
@@ -28,7 +28,8 @@ for(var i = 1; i < 101; i++){
     sum += i;
     msg += `${i} + `;
 }
-console.log(`${msg} : ${sum}`);
+// console.log(`${msg} : ${sum}`);
+console.log(sum);
 console.log("------------------");
 // console.log(`${msg} : ${sum}`);
 /* Factorial Escribe código que multiplique todos los valores del 1 al 12 en una variable producty, al final, console.log dé como resultado  1 * 2 * 3 * ... * 10 * 11 * 12. Deberíamos obtener  479001600al final. */
@@ -38,5 +39,6 @@ for(var i = 1; i < 13; i++){
     producty *= i;
     msg += `${i} * `;
 }
-console.log(`${msg} : ${producty}`);
+// console.log(`${msg} : ${producty}`);
+console.log(producty);
 console.log("------------------");
