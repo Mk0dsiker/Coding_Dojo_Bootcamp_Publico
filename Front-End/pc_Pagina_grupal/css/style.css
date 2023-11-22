@@ -30,16 +30,25 @@ ul{
     
 }
 
-ul > li {
+.nav_ul li {
     margin-right: 3vh;
     font-weight: bolder;
     font-size: 20px;
     color: #00ad6a;
 }
 
+.nav_ul .select {
+    color: black;
+}
+
 .btn-SingUp{
     border: 1px solid #00ad6a;
     padding: 8px 15px;
+}
+
+.btn-SingUp:hover {
+    box-shadow: -5px 5px 0px #00ad6a;
+    transform: translate(5px, -5px)
 }
 
 
@@ -91,6 +100,14 @@ ul > li {
     /* text-align: justify; */
 }
 
+.card1 {
+    border: none;
+}
+
+.card1 h2 {
+    color: #00ad6a;
+}
+
 .card2 {
     height: 500px;
 }
@@ -100,6 +117,15 @@ ul > li {
     flex-direction: column;
     list-style: disc;
     /* text-align: justify; */
+}
+
+.btnTrial{
+    /* width: 400px; */
+    background-color: #1fe374;
+    padding: 2vh;
+    margin-top: 1vh;
+    font-size: 24px;
+    font-weight: bolder;
 }
 
 .c2_mid, .c2_bottom, .c3_mid, .c3_bottom {
@@ -132,70 +158,115 @@ ul > li {
 
 aside {
     width: 100%;
-    height: 500px;
+    padding: 50px 0;
 
     display: flex;
+    justify-content: center;
     background-color: white;
 }
 
-.table_head {
-font-size: 50px;
-
+.faq{
+    width: 1200px;
+    /* height: 1000px; */
     display: flex;
-    align-items: center;
-    justify-content: flex-start;
+    flex-direction: column;
+    justify-content: space-between;
+}
+table tr {
+    /* width: 200px; */
+    margin-bottom: 15px;
+}
+.thead {
+    font-size: 50px;
+    text-align: left;
 }
 .faq_tittle {
-    font-size: 20px;
-    font-weight: 700;
+    display: block;
+    font-size: 24px;
+    /* font-weight: 700; */
 }
 
 table td {
-    font-size: 15px;
+    
+    font-size: 22px;
+    font-weight: 100;
+    text-align: left;
+    
+
+
+    padding: 15px 0px;
+    vertical-align: text-top;
 }
+
 
 /*Footer Section*/
 footer{
     background-color: black;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    padding: 5vh;
 }
 
-.btnTrial{
+.btnTrial2{
+    width: 400px;
     background-color: #1fe374;
     padding: 2vh;
     margin-top: 1vh;
+    font-size: 24px;
     font-weight: bolder;
 }
 
+.row {
+    width: 1200px;
+    margin: 0 auto;
 
-footer{
     display: flex;
     justify-content: space-between;
-    padding: 5vh;
+}
 
+.col1 img {
+    width: 240px;
+    margin-bottom: 20px;
 }
 
 .col1{
-    margin: 5vh 0;
+    margin: 2vh 0;
 }
 
 .col2{
     display: flex;
-    margin: 5vh 0;
+    margin: 2vh 0;
 }
 
-.col2 > ul{
+.footlist {
     display: block;
-    padding-inline-start: 40px;
+    padding-inline-start: 150px;
 }
 
-.col2 li{
+.footlist li{
+    color: #1fe374;
     padding-bottom: 1vh;
+
+    font-size: 25px;
 }
 
-.col2 li:hover{
+.footlist li:hover{
     color: #d6dae5;
 }
 
-ul li:first-child {
+.footlist li:first-child {
     color: #fcfcfc;
+}
+
+.rr {
+    margin-top: 100px;
+    color: grey;
+}
+
+.rr a {
+    /* text-decoration: none; */
+    color: grey;
 }

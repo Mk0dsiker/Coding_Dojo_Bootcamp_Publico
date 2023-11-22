@@ -12,10 +12,10 @@
             <a href="#">
                 <img src="https://pulseapp.com/img/pulse-logo.svg">
             </a>
-            <ul>
+            <ul class="nav_ul">
                 <li>Features</li>
                 <li>Customer Stories</li>
-                <li>Princing</li>
+                <li class="select">Princing</li>
                 <li>Blog</li>
                 <li class="btn-SingUp">Sign Up</li>
             </ul>
@@ -44,7 +44,7 @@
                     <div class="c2_mid">
                         <h3>Small business plan</h3>
                         <p>$59 per month</p>
-                        <button>Sign up now</button>
+                        <button class="btnTrial">Sign up now</button>
                     </div>
                     <div class="c2_bottom">
                         <p>you get Pulse basics, plus:</p>
@@ -63,7 +63,7 @@
                     <div class="c3_mid">
                         <h3>Unlock extra features</h3>
                         <p>$89 per month</p>
-                        <button>Try Premium</button>
+                        <button class="btnTrial">Try Premium</button>
                     </div>
                     <div class="c3_bottom">
                         <p>get it all. plus:</p>
@@ -83,67 +83,84 @@
             <aside>
                 <div class="faq">
                     <table>
-                        <th colspan="2" class="table_head">FAQ</th>
-                        <tr>
-                            <td class="faq_tittle">How does the 30-day free trial work?</td>
-                            <td class="faq_tittle">If I upgrade an existing account, do I get another free trial?</td>
-                        </tr>
-                        <tr>
-                            <td>You can use Pulse absolutely free for 30 days. After 30 days, we will charge the credit card you used when you sign up. If you choose to cancel your account before your trial ends, your card will not be charged.</td>
-                            <td>Brand new accounts are the only ones eligible for a 30-day free trial. If you upgrade an existing account, your credit card will be billed the new amount on the date of your next billing cycle.</td>
-                        </tr>
-                        <tr>
-                            <td class="faq_tittle">What is a “Financial Account”?</td>
-                            <td class="faq_tittle">Do I have to commit to a long-term contract?</td>
-                        </tr>
-                        <tr>
-                            <td class="faq_content">Financial Accounts are a grouping of income and expense items that can be used for tracking or reporting purposes.
-
-                            They’re designed to be flexible and can be used to differentiate between bank accounts, companies, individuals or between personal and business entries.</td>
-                            <td>No. There is no contract when you use Pulse, other than agreeing to our Terms of Service.</td>
-                        </tr>
-                        <tr>
-                            <td class="faq_tittle">Will I be able to cancel my account if I don’t use Pulse?</td>
-                            <td class="faq_tittle">What types of payments do you accept?</td>
-                        </tr>
-                        <tr>
-                            <td>Yes – you can cancel your account at any time. To cancel your account, go to your billing page and click on “Please cancel my account” at the bottom of the page. The account owner is the only one who can cancel an account. An email request to delete an account is not considered cancellation.</td>
-                            <td>We accept payments made online using Visa, Mastercard, Discover, and American Express.</td>
-                        </tr>
+                        <thead>
+                            <tr>
+                                <th class="thead" colspan="2">FAQ</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <b class="faq_tittle">How does the 30-day free trial work?</b>
+                                    You can use Pulse absolutely free for 30 days. After 30 days, we will charge the credit card you used when you sign up. If you choose to cancel your account before your trial ends, your card will not be charged.
+                                </td>
+                                <td>
+                                    <b class="faq_tittle">If I upgrade an existing account, do I get another free trial?</b>
+                                    Brand new accounts are the only ones eligible for a 30-day free trial. If you upgrade an existing account, your credit card will be billed the new amount on the date of your next billing cycle.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b class="faq_tittle">What is a “Financial Account”?</b>
+                                    Financial Accounts are a grouping of income and expense items that can be used for tracking or reporting purposes.<br>     They’re designed to be flexible and can be used to differentiate between bank accounts, companies, individuals or between personal and business entries.
+                                </td>
+                                <td>
+                                    <b class="faq_tittle">Do I have to commit to a long-term contract?</b>
+                                    No. There is no contract when you use Pulse, other than agreeing to our Terms of Service.
+                                </td>
+                            </tr>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b class="faq_tittle">Will I be able to cancel my account if I don’t use Pulse?</b>
+                                    Yes – you can cancel your account at any time. To cancel your account, go to your billing page and click on “Please cancel my account” at the bottom of the page. The account owner is the only one who can cancel an account. An email request to delete an account is not considered cancellation.
+                                </td>
+                                <td>
+                                    <b class="faq_tittle">What types of payments do you accept?</b>
+                                    We accept payments made online using Visa, Mastercard, Discover, and American Express.
+                                </td>
+                            </tr>                            
+                        </tbody>
                     </table>
                 </div>
             </aside>
         </div>
     </main>
     <footer>
-        <div class="col1">
-            <p>
-            <img src="https://pulseapp.com/img/pulse-logo.svg">
-            </p>
-            <p>
-            <button class="btnTrial">Sign Up for a Free 30-Day Trial</button>
-            </p>
-        </div>
+        <div class="row">
+            <div class="col1">
+                <p>
+                <img src="https://pulseapp.com/img/pulse-logo.svg">
+                </p>
+                <p>
+                <button class="btnTrial2">Sign Up for a Free 30-Day Trial</button>
+                </p>
+                <div class="rr">
+                    <p>©2019 Pulseapp.com, Inc. All Rights Reserved | <a href="#">Terms of Use</a> | <a href="#">Privacy Policy</a> | <a href="#">EU Privacy</a> Pulse is made by <a href="#">Simple Focus</a>. We also make <a href="#">Ballpark</a>, <a href="#">Sifter</a>, and <a href="#">Curated</a>.</p>
+                </div>
+            </div>
 
-        <div class="col2">
-            <ul>
-                <li>Product</li>
-                <li>Features</li>
-                <li>Pricing</li>
-                <li>Sing Up</li>
-            </ul>
-            <ul>
-                <li>Company</li>
-                <li>Customer <br> Stories</li>
-                <li>About</li>
-                <li>Contact</li>
-            </ul>
-            <ul>
-                <li>Resources</li>
-                <li>Support</li>
-                <li>Blog</li>
-            </ul>
+            <div class="col2">
+                <ul class="footlist">
+                    <li>Product</li>
+                    <li>Features</li>
+                    <li>Pricing</li>
+                    <li>Sing Up</li>
+                </ul>
+                <ul class="footlist">
+                    <li>Company</li>
+                    <li>Customer <br> Stories</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                </ul>
+                <ul class="footlist">
+                    <li>Resources</li>
+                    <li>Support</li>
+                    <li>Blog</li>
+                </ul>
+            </div>
         </div>
+        
     </footer>
 </body>
 </html>
