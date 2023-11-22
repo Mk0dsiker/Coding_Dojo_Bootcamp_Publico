@@ -5,6 +5,7 @@
     padding: 0;
     margin: 0;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
 }
 
 /* CSS header */
@@ -91,12 +92,14 @@ ul{
 }
 
 .card1, .card2, .card3 {
-    width: 300px;
-    border: 2px solid black;
+    width: 380px;
+    
+    padding: 0px 20px;
 
     display: flex;
     flex-direction: column;
     align-items: center;
+    /* justify-content: space-between; */
     /* text-align: justify; */
 }
 
@@ -112,10 +115,108 @@ ul{
     height: 500px;
 }
 
-.card1 ul, .card2 ul, .card3 ul {
+.card2_container  {
+    background-color: #fcfcfc;
+    border: 1px solid #00ad6a;
+    border-radius: 10px;
+}
+
+.card3_container  {
+    background-color: #fcfcfc;
+    border: 1px solid #83858a;
+    
+}
+
+.c2_banner {
+    background-color: #00ad6a;
+    
+    height: 20px;
+
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    /* border-bottom: none; */
+
+    text-transform:uppercase;
+    color: #fff;
+    
+    font-weight: 700;
+    font-size: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.c3_banner {
+    background-color: #d6dae5;
+    
+    height: 20px;
+
+    /* border-top-left-radius: 6px;
+    border-top-right-radius: 6px; */
+
+    padding: 20px 30px;
+
+    text-align: center;
+    
+    font-weight: 200;
+    font-size: 12px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.c2_mid h3 {
+    padding: 20px;
+    /* padding-top: 40px; */
+    font-size: 42px;
+    text-transform: capitalize;
+    line-height: 0.9;
+    color: #00ad6a;;
+}
+
+.c3_mid h3 {
+    padding: 20px;
+    /* padding-top: 40px; */
+    font-size: 38px;
+    font-weight: 100;
+    text-transform: capitalize;
+    line-height: 0.9;
+    color: #00ad6a;;
+}
+
+.c2_mid p, .c3_mid p {
+    font-size: 25px;
+    color: #83858a;
+}
+
+.c2_bottom p, .c3_bottom p {
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: 700;
+}
+
+.c2_mid, .c2_bottom, .c3_mid, .c3_bottom {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    text-align: center;
+    /* margin-top: 20px; */
+    padding: 0 20px 20px 20px;
+}
+
+.card1 ul, .card2 ul, .card3 ul {
+    margin-top: 20px;
+    margin-bottom: 40px;
+
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+
     list-style: disc;
+    list-style-position: inside;
     /* text-align: justify; */
 }
 
@@ -128,11 +229,6 @@ ul{
     font-weight: bolder;
 }
 
-.c2_mid, .c2_bottom, .c3_mid, .c3_bottom {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
 .main_bottom {
     width: 800px;
