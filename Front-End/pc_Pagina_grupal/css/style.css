@@ -5,7 +5,7 @@
     padding: 0;
     margin: 0;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 }
 
 /* CSS header */
@@ -15,26 +15,29 @@ header{
     background-color: #eafaf1;
 }
 
-.nav{
+.nav {
+    width: 1100px;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+
+}
+
+.nav_ul{
     display: flex;
     justify-content: space-around;
     align-items: center;
 
-}
-
-ul{
     list-style: none;
 
-    display: flex;    
-    align-items: center;
-    justify-content: space-evenly;
-    
 }
 
 .nav_ul li {
     margin-right: 3vh;
     font-weight: bolder;
-    font-size: 20px;
+    font-size: 15px;
     color: #00ad6a;
 }
 
@@ -65,9 +68,9 @@ ul{
 }
 
 .main_top {
-    width: 600px;
+    width: 500px;
     padding: 30px 0;
-
+    margin-bottom: 50px;
     text-align: center;
 
     display: flex;
@@ -77,24 +80,25 @@ ul{
 }
 
 .main_top h1 {
-    font-size: 70px;
+    font-size: 60px;
     font-weight: 700;
+    
 }
 
 .main_top p {
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .main_mid {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    /* justify-content: space-around; */
 }
 
 .card1, .card2, .card3 {
     width: 380px;
     
-    padding: 0px 20px;
+    
 
     display: flex;
     flex-direction: column;
@@ -104,33 +108,47 @@ ul{
 }
 
 .card1 {
+    width: 280px;
     border: none;
+    padding-right: 20px;
+}
+
+.card1 li {
+    margin-top: 15px;
 }
 
 .card1 h2 {
+    font-size: 22px;
+    font-weight: 700;
     color: #00ad6a;
 }
 
 .card2 {
-    height: 500px;
+    height: 600px;
 }
 
 .card2_container  {
+    height: 100%;
     background-color: #fcfcfc;
     border: 1px solid #00ad6a;
     border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .card3_container  {
     background-color: #fcfcfc;
     border: 1px solid #83858a;
+    border-left: none;
     
 }
 
 .c2_banner {
     background-color: #00ad6a;
     
-    height: 20px;
+    height: 40px;
 
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
@@ -148,7 +166,7 @@ ul{
 }
 
 .c3_banner {
-    background-color: #d6dae5;
+    background-color: #f2f3f3;
     
     height: 20px;
 
@@ -160,7 +178,7 @@ ul{
     text-align: center;
     
     font-weight: 200;
-    font-size: 12px;
+    font-size: 16px;
 
     display: flex;
     align-items: center;
@@ -192,9 +210,13 @@ ul{
     color: #83858a;
 }
 
+.c2_bottom {
+    height: 300px;
+}
+
 .c2_bottom p, .c3_bottom p {
     text-transform: uppercase;
-    font-size: 10px;
+    font-size: 12px;
     font-weight: 700;
 }
 
@@ -204,27 +226,33 @@ ul{
     align-items: center;
     text-align: center;
     /* margin-top: 20px; */
-    padding: 0 20px 20px 20px;
+    padding: 0 20px 30px 20px;
 }
 
 .card1 ul, .card2 ul, .card3 ul {
-    margin-top: 20px;
-    margin-bottom: 40px;
-
-    display: flex;
-    flex-direction: column;
-    text-align: justify;
+    
+    
+    text-align: left;
 
     list-style: disc;
     list-style-position: inside;
     /* text-align: justify; */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
+
+.c2_bottom li, .c3_bottom li {
+    margin-top: 15px;
+}
+
 
 .btnTrial{
     /* width: 400px; */
     background-color: #1fe374;
     padding: 2vh;
-    margin-top: 1vh;
+    margin-top: 2vh;
     font-size: 24px;
     font-weight: bolder;
 }
